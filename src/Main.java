@@ -8,6 +8,7 @@ class main {
         Man Bohdan = new Man();
         // Bohdan.height = 175;
 
+
         // Виклик функції виводу зображення у консоль, застосування методу toString до об'єкту Petro без перезаписування
         System.out.println(Petro.toString());
         // Виклик функції виводу зображення у консоль, застосування методу toString до об'єкту Petro з перезаписуванням

@@ -14,6 +14,7 @@ public class Man {
         this.height = h;
         this.nation = nat;
         this.sex = s;
+
     }
     // Пустий конструктор
     public Man (){
