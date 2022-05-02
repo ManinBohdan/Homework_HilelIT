@@ -1,54 +1,11 @@
     // Клас Man
 public class Man {
     // Поля
-   private   String name;
-        private   Integer age;
-        private   int height;
-        private   String nation;
-        private   String sex;
-        private Boolean number;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
-
-        public int getHeight() {
-            return height;
-        }
-
-        public void setHeight(int height) {
-            this.height = height;
-        }
-
-        public String getNation() {
-            return nation;
-        }
-
-        public void setNation(String nation) {
-            this.nation = nation;
-        }
-
-        public String getSex() {
-            return sex;
-        }
-
-        public void setSex(String sex) {
-            this.sex = sex;
-        }
-
-
+     public String name;
+     public int age;
+     public int height;
+     public String nation;
+     public String sex;
 
         // Конструктор
     public Man(String n, int a, int h, String nat, String s){
@@ -69,9 +26,26 @@ public class Man {
     public String toString (){
         return "Name: " + name + "\n" + "Age: " + age + "\n" + "Height: " + height + "\n" + "Nation:" + nation + "\n" + "Sex: " + sex;
     }
+    // Статична функція
+    public static void PersonInformation (String name, int age, String nation) {
+        System.out.println("He/She is " + name);
+        System.out.println("His/Her age is " + age);
+        System.out.println("His/Her is " + nation);
+    }
+    // Статична функція
+    public static String Recomendations (String name, int age, String nation) {
+        return "Hello," + name + "!!!" +"\n" + "You're almost " + (age + 1) + "\n" + "I'm very happy that you are " + nation + "\n" + "See you soon)";
+    }
+    // Статична функція
+    public static String True_False (boolean value) {
+        if (value) {
+            return "It's true!";
+        }
+        else {
+            return "Ufortunately, but it's false!";
+        }
+    }
 
 
-
-    // Точка входу у програму
 
 }
