@@ -6,6 +6,8 @@ class main {
         Man Petro = new Man("Petro", 21, 180, "Ukrainian", "male");
         // Створення об'єкту класу Man за допомогою пустого конструктора
         Man Bohdan = new Man();
+        Bohdan.height = 175;
+
         // Виклик функції виводу зображення у консоль, застосування методу toString до об'єкту Petro без перезаписування
         System.out.println(Petro.toString());
         // Виклик функції виводу зображення у консоль, застосування методу toString до об'єкту Petro з перезаписуванням
